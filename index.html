@@ -1,8 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>html, body{
+      margin:0;
+      padding:0;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+      overflow:hidden;
+      z-index: 0;
+      background-color:#dedede;background-image: radial-gradient(circle at 0px 0px, rgba(206, 179, 97, 0.133) 0%,#fff0 1000px), radial-gradient(circle at 100% 100%, rgba(103, 190, 169, 0.133) 0%,#fff0 1000px);
+  }
+  #static-background{
+    margin-top: 10%;
+    position:fixed;
+    pointer-events: none;
+    width: 100%;
+    height:100%;
+    filter: opacity(0.5);
+  }
+  #red-ball{
+    margin: 0 auto;
+    background-image: radial-gradient(farthest-corner at 40px 40px,rgb(255, 255, 255) 0%, rgb(244, 111, 111) 20%, rgb(185, 30, 30) 100%);
+    width: 600px;
+    height: 600px;
+    transition-duration: 2s;
+    border-radius: 2000vw;
+    position: relative;
+  }
+  #toptriangle {
+    margin: 0 auto;
+    background-image: linear-gradient(0deg, #fff 0%, #fff 50%, #0000 50%,#0000 100%);
+    box-shadow: inset -30px -60px 120px #00000090, 50px 50px 50px -25px #00000090;
+    width: 600px;
+    height: 600px;
+    transition-duration: 2s;
+    border-radius: 2000vw;
+    top: -600px;
+    position: relative;
+  }
+  </style>
+    <title>Pokemon App</title>
+    </script>
+  </head>
+  <body>
+    <div id="static-background">
+      <div id="red-ball">
+      </div>
+      <div id="toptriangle">
+      </div>
+    </div>
+  </body>
 </html>
