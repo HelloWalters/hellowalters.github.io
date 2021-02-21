@@ -3,48 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>html, body{
-      margin:0;
-      padding:0;
-      font-family: Arial, Helvetica, sans-serif;
-  }
-  body{
-      overflow:hidden;
-      z-index: 0;
-      background-color:#dedede;background-image: radial-gradient(circle at 0px 0px, rgba(206, 179, 97, 0.133) 0%,#fff0 1000px), radial-gradient(circle at 100% 100%, rgba(103, 190, 169, 0.133) 0%,#fff0 1000px);
-  }
-  #static-background{
-    margin-top: 10%;
-    position:fixed;
-    pointer-events: none;
-    width: 100%;
-    height:100%;
-    filter: opacity(0.5);
-  }
-  #red-ball{
-    margin: 0 auto;
-    background-image: radial-gradient(farthest-corner at 40px 40px,rgb(255, 255, 255) 0%, rgb(244, 111, 111) 20%, rgb(185, 30, 30) 100%);
-    width: 600px;
-    height: 600px;
-    transition-duration: 2s;
-    border-radius: 2000vw;
-    position: relative;
-  }
-  #toptriangle {
-    margin: 0 auto;
-    background-image: linear-gradient(0deg, #fff 0%, #fff 50%, #0000 50%,#0000 100%);
-    box-shadow: inset -30px -60px 120px #00000090, 50px 50px 50px -25px #00000090;
-    width: 600px;
-    height: 600px;
-    transition-duration: 2s;
-    border-radius: 2000vw;
-    top: -600px;
-    position: relative;
-  }
-  </style>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
     <title>HelloWalters - github.io</title>
-    </script>
   </head>
   <body>
     <div id="static-background">
@@ -53,5 +14,33 @@
       <div id="toptriangle">
       </div>
     </div>
+    <div id="main-layout">
+      <div onmouseout="recenterObject(this)" id="pokemon-card" class="card">
+        <div class="inner-card">
+          <div class="gradient"></div>
+          <div class="image">
+            <img src="styles/images/sparkle.gif" class="bg-image sparkle">
+            <img src="styles/images/image.png" class="bg-image pokemon">
+            <div class="header">
+              <h1>Charizard</h1> <h2>78 HP</h2>
+            </div>
+          </div>
+          <div data-v-385e7890="" class="text">
+            <span data-v-385e7890="" class="banner">Pokémon No.006</span>
+            <p data-v-385e7890="" style="font-weight: 700; color: rgb(0, 0, 0); text-shadow: rgba(0, 0, 0, 0.333) 0px 2px 5px;">
+              <span data-v-385e7890="" style="opacity: 0.75;">- Pokemon Type - </span>
+              <br data-v-385e7890=""><br data-v-385e7890=""> <span data-v-385e7890="">
+                <span data-v-385e7890="" style="border: 4px solid rgba(255, 255, 255, 0.4); box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 10px inset, rgba(0, 0, 0, 0.533) 0px 5px 10px; background-image: linear-gradient(50deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.533) 70%, rgba(255, 255, 255, 0) 95%); padding: 5px 10px 7px; border-radius: 50px; background-color: rgb(245, 172, 120);">Fire</span>
+                <span data-v-385e7890="">
+                  <span data-v-385e7890="" style="color: rgb(0, 0, 0); opacity: 0.75; padding: 0px 5px;"> &amp;</span>
+                  <span data-v-385e7890="" style="border: 4px solid rgba(255, 255, 255, 0.4); box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 10px inset, rgba(0, 0, 0, 0.533) 0px 5px 10px; background-image: linear-gradient(50deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.533) 70%, rgba(255, 255, 255, 0) 95%); padding: 5px 10px 7px; border-radius: 50px; background-color: rgb(168, 144, 240);">Flying</span>
+                </span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>

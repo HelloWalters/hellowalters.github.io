@@ -1,0 +1,167 @@
+html, body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow:hidden;
+    z-index: 0;
+    background-color:#dedede;background-image: radial-gradient(circle at 0px 0px, rgba(206, 179, 97, 0.133) 0%,#fff0 1000px), radial-gradient(circle at 100% 100%, rgba(103, 190, 169, 0.133) 0%,#fff0 1000px);
+    text-align: center;
+}
+#static-background{
+  margin-top: 10%;
+  position:fixed;
+  pointer-events: none;
+  width: 100%;
+  height:100%;
+  filter: opacity(0.5);
+}
+#red-ball{
+  margin: 0 auto;
+  background-image: radial-gradient(farthest-corner at 40px 40px,rgb(255, 255, 255) 0%, rgb(244, 111, 111) 20%, rgb(185, 30, 30) 100%);
+  width: 600px;
+  height: 600px;
+  transition-duration: 2s;
+  border-radius: 2000vw;
+  position: relative;
+}
+#toptriangle {
+  margin: 0 auto;
+  background-image: linear-gradient(0deg, #fff 0%, #fff 50%, #0000 50%,#0000 100%);
+  box-shadow: inset -30px -60px 120px #00000090, 50px 50px 50px -25px #00000090;
+  width: 600px;
+  height: 600px;
+  transition-duration: 2s;
+  border-radius: 2000vw;
+  top: -600px;
+  position: relative;
+}
+#main-layout{
+  overflow: scroll;
+  overflow-x: hidden;
+  /* height: calc(100vh - 177px); */
+  height: 100vh;
+  width: calc(100% + 17.5px);
+  margin-right: 17.5px;
+  z-index: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.card{
+    z-index: 500;
+    width: 315px;
+    height: 440px;
+    background-color: red;
+    perspective:500px;
+    background-image: linear-gradient(50deg,#fbda00 30%, #ff0 50%, #fbda00 70%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 12.5px;
+    transform-origin: center;
+    cursor: pointer;
+    box-shadow: 1.5em 1.5em 1.5em -1.5em #00000055;
+}
+.inner-card{
+	position: relative;
+	pointer-events: none;
+	margin: 0 auto;
+	top: 20px;
+	width: 275px;
+	height: 400px;
+	background: #ff3300 url(images/smoke.png) no-repeat bottom;
+	overflow: hidden;
+    background-color: rgb(202, 121, 92);
+}
+.gradient{
+    background-color: rgb(202, 121, 92);
+	width: 215px;
+	height: 150px;
+	position: relative;
+	top: 40px;
+	margin: 0 auto;
+	opacity: 0.5;
+	background-size: auto 100%;
+	background-clip: padding-box;
+	border: #0000 10px;
+}
+.image{
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center bottom;
+    width: 215px;
+    height: 150px;
+    position: relative;
+    top: -120px;
+    margin: 0 auto;
+    background-clip: padding-box;
+    border: #ffff0080 groove 10px;
+}
+.bg-image{
+    height: 100%;
+    position: relative;
+    display: block;
+    margin: 0 auto !important;
+}
+.sparkle{
+    width:100%;
+}
+.pokemon{
+    top: -90%;
+    height: 80% !important;
+}
+.header{
+	position: relative;
+	top: -180%;
+}
+.header h1{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: -40px;
+    font-size: 24px;
+    left: -5px;
+    display: inline;
+    text-shadow: 0px 2px 5px #00000055;
+}
+.header h2{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: -40px;
+    font-size: 24px;
+    left: -5px;
+    display: inline;
+    color: #d00;
+    text-align: end;
+    font-weight: 400;
+    float: right;
+    text-shadow: 0px 0px 5px #fff9;
+}
+.text{
+    height: 50%;
+    position: relative;
+    top: -30%;
+    width: 80%;
+    margin: 0 auto;
+}
+.text .banner{
+    display: block;
+    text-align: center;
+    font-style: italic;
+    background-image: linear-gradient(50deg, #a80 0%, #fd6 50%, #a80 100%);
+    margin-top: 5px;
+    font-size: 9.5px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-shadow: 0px 2px 5px #00000055;
+    -webkit-box-shadow: 0px 5px 5px #00000055;
+    box-shadow: 0px 5px 5px #00000055;
+}
+.text .banner p{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-shadow: rgba(0, 0, 0, 0.333) 0px 2px 5px;
+}
